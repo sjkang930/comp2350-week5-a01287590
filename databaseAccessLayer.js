@@ -1,12 +1,13 @@
 const database = include('/databaseConnection');
 
 
-function getAllTodos(callback) {
-	let sqlQuery = "SELECT * FROM b3d62wund54zoe75.web_user";
+function getAllUsers(callback) {
+	let sqlQuery = "SELECT * From web_user ";
 	database.query(sqlQuery, (err, results, fields) => {
 		if (err) {
 			callback(err, null);
 		}
+
 		else {
 			console.log(results);
 			callback(null, results);
@@ -15,4 +16,4 @@ function getAllTodos(callback) {
 }
 
 
-module.exports = {getAllTodos}
+module.exports = {getAllUsers}
