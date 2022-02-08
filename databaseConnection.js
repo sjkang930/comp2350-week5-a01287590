@@ -1,20 +1,20 @@
 const mysql = require('mysql2');
 
 const is_heroku = process.env.IS_HEROKU || false;
-
+// mysql:v3yrm8s87w5zaqhh:claoehzuijpmz6a9@lfmerukkeiac5y5w.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/b3d62wund54zoe75
 const dbConfigHeroku = {
-	host: "us-cdbr-east-03.cleardb.com",
-	user: "b1ab7fb2ee03bc",
-	password: "2a484a2d",
-	database: "heroku_3d208ad4bd6f421",
+	host: "lfmerukkeiac5y5w.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+	user: "v3yrm8s87w5zaqhh",
+	password: "claoehzuijpmz6a9",
+	database: "b3d62wund54zoe75",
 	multipleStatements: false
 };
 
 const dbConfigLocal = {
-	host: "localhost",
-	user: "root",
-	password: "Password",
-	database: "lab_example",
+	host: "lfmerukkeiac5y5w.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+	user: "v3yrm8s87w5zaqhh",
+	password: "claoehzuijpmz6a9",
+	database: "b3d62wund54zoe75",
 	multipleStatements: false
 };
 
