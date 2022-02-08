@@ -2,7 +2,7 @@ const database = include('/databaseConnection');
 
 
 function getAllUsers(callback) {
-	let sqlQuery = "SELECT * From web_user ";
+	let sqlQuery = "SELECT * FROM b3d62wund54zoe75.web_user";
 	database.query(sqlQuery, (err, results, fields) => {
 		if (err) {
 			callback(err, null);
